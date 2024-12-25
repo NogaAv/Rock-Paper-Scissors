@@ -1,0 +1,140 @@
+body {
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+.game-board {
+  height: 500px;
+  margin-top: 20px;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.moves-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.move-icon {
+  height: 50px;
+}
+.move-btn {
+  background-color: transparent;
+  border: 3px solid white;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.status-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.current-score-status {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+  text-align: center;
+}
+.score {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.picks {
+  margin-left: 25px;
+}
+.play-btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.play-btns div {
+  padding: 5px;
+}
+
+.reset-score-btn,
+.aoto-play-btn {
+  background-color: white;
+  border: none;
+  font-size: 15px;
+  padding: 8px 15px;
+  cursor: pointer;
+  box-shadow: 5px 5px 8px rgba(235, 235, 6, 0.5);
+  transition: padding 1s;
+}
+
+.reset-score-btn:active,
+.aoto-play-btn:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+.confirmation-msg {
+  display: none;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+
+.confirmation-msg p {
+  margin-top: 40px;
+}
+
+.confirmation-msg button {
+  height: 30px;
+}
+
+.display {
+  display: block;
+}
+
+.yes-btn,
+.no-btn {
+  color: white;
+  border: none;
+  height: 36px;
+  width: 54px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: box-shadow 0.15s;
+  vertical-align: top;
+}
+.yes-btn {
+  background-color: green;
+}
+.no-btn {
+  background-color: rgb(204, 0, 0);
+}
+
+.yes-btn:hover,
+.no-btn:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 500px) {
+  .scissors-move-btn {
+    margin-left: 60px;
+  }
+  .moves-flex {
+    margin-left: 80px;
+  }
+}

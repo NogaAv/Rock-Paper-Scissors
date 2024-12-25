@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper, Scissors</title>
+    <link rel="stylesheet" href="./rock-paper-scissors.css" />
+  </head>
+  <body>
+    <div class="game-board">
+      <h1 class="title">Rock Paper Scissors</h1>
+      <div class="moves-flex">
+        <button class="js-rock-move-btn move-btn">
+          <img src="../images/rock-emoji.png" class="move-icon" />
+        </button>
+        <button class="js-paper-move-btn move-btn">
+          <img src="../images/paper-emoji.png" class="move-icon" />
+        </button>
+        <button class="js-scissors-move-btn scissors-move-btn move-btn">
+          <img src="../images/scissors-emoji.png" class="move-icon" />
+        </button>
+      </div>
+
+      <div class="status-wrapper">
+        <div class="current-status-container">
+          <p class="js-current-score-status current-score-status"></p>
+          <p class="js-picks picks"></p>
+          <p class="js-score score"></p>
+        </div>
+      </div>
+
+      <div class="play-btns">
+        <button class="js-reset-score-btn reset-score-btn">Reset Score</button>
+        <button class="js-aoto-play-btn aoto-play-btn">Auto Play</button>
+      </div>
+
+      <div class="js-confirmation-msg confirmation-msg">
+        <p>
+          Are you sure you want to reset the score? <button class="yes-btn">Yes</button>
+          <button class="no-btn">No</button>
+        </p>
+      </div>
+    </div>
+
+    <script src="./rock-paper.scissors.js"></script>
+  </body>
+</html>
