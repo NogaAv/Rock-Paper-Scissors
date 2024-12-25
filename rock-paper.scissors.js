@@ -132,7 +132,7 @@ function updateGameStatus(userChoice, compChoice, result) {
   currentScoreStatus.innerText = result;
 
   const pickes = document.querySelector('.js-picks');
-  pickes.innerHTML = `You <img src="../images/${userChoice}-emoji.png" class="move-icon"> <img src="../images/${compChoice}-emoji.png" class="move-icon"> Computer`;
+  pickes.innerHTML = `You <img src="./images/${userChoice}-emoji.png" class="move-icon"> <img src="./images/${compChoice}-emoji.png" class="move-icon"> Computer`;
 
   updateScoreElement();
 }
